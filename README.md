@@ -8,19 +8,20 @@ Uruchomienie:
 ./geo
 
 
+
 OPIS PROJEKTU
 Ogólny zamysł projektu:
 Biblioteczka z użytecznymi strukturami i algorytmami do zadań geometrycznych z Competetive Programming. 
 KLASY:
-  •	Point
+  •	PoinT
     1.	Klasa abstrakcyjna, tak jakby interfejs dla punktu
     2.	Zawiera tylko czysto wirtualne metody
     3.	Wymusza aby wszystkie klasy implementujące interfejs Point miały zdefiniowane:
-       	operatory matematyczne (+,-), 
-       	operatory porównywania (<,>,<=,>=,==), 
-       	length - funkcję zwracającą długość wektora 
-       	Iloczyn skalarny
-       	Distance - funkcję biorącą jeden Punkt jako argument i zwracającą odległość euklidesową do tego punktu
+        	operatory matematyczne (+,-), 
+        	operatory porównywania (<,>,<=,>=,==), 
+        	length - funkcję zwracającą długość wektora 
+        	Iloczyn skalarny
+        	Distance - funkcję biorącą jeden Punkt jako argument i zwracającą odległość euklidesową do tego punktu
     4.	Z przyczyn technicznych nie udało mi się dołożyć tu funkcji norm i unrooted_distance
 
   •	Point2D
@@ -29,13 +30,15 @@ KLASY:
     3.	Zawiera pola opisujące współrzędne – x i y
     4.	Współrzędne będą miały generyczny typ danych (int, long long,float,double,long double)
     5.	Zawiera dodatkowe metody:
-       	Unrooted_distance – to samo co distance tylko bez nałożonego pierwiastka
-       	Norm - norma
-       	Angle – zwraca kąt względem osi OX lub względem jednego lub dwóch punktów
-       	Triangle_area – zwraca pole trójkąta wyznaczone przez siebie i dwa dodatkowe punkty
-       	Signed_area_parallelogram – zwraca skierowane pole równoległoboku wyznaczone przez siebie i dwa dodatkowe punkty
-       	Clockwise_area – funkcja sprawdzająca czy this punkt1 i punkt 2 są w kolejności zgodnej z ruchem wskazówek zegara
-       
+        	Unrooted_distance – to samo co distance tylko bez nałożonego pierwiastka
+        	Norm - norma
+        	Angle – zwraca kąt względem osi OX lub względem jednego lub dwóch punktów
+        	Triangle_area – zwraca pole trójkąta wyznaczone przez siebie i dwa dodatkowe punkty
+        	Signed_area_parallelogram – zwraca skierowane pole równoległoboku wyznaczone przez siebie i dwa dodatkowe punkty
+        	Clockwise_area – funkcja sprawdzająca czy this punkt1 i punkt 2 są w kolejności zgodnej z ruchem wskazówek zegara
+
+
+    
   •	Point3D
     1.	Klasa reprezentująca 3-wymiarowy punkt
     2.	Pochodna klasy Point
